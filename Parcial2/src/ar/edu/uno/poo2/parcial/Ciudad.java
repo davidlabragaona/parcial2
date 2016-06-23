@@ -31,14 +31,10 @@ public class Ciudad {
 		
 		//para saber que vertice está incluído
 		boolean mstSet[] = new boolean[matriz.length];
-		
-		
-		
-		
-		
-		
-		
 	}
-	
+	    //setters 
+    public void setDimension(Integer d){
+        this.dimension=d;
+    }
 
 }
