@@ -2,6 +2,26 @@ package ar.edu.uno.poo2.parcial;
 
 public class Ciudad {
 	
+	private Integer[][] matrizAdyacencia;
+	private Integer dimension;
+    
+    	public Ciudad(Integer dimension){
+        	setDimension(dimension);
+	        this.matrizAdyacencia = new Integer[dimension][dimension];
+        	for(int i=0;i<dimension;i++){
+        	   for(int j=0; j<dimension;j++){
+        	        this.matrizAdyacencia[i][j]=2;
+        	   }
+		}
+	  }
+    
+    
+	  public void agregarCamino(int origen, int destino, int tipo){
+		  this.matrizAdyacencia[origen][destino]=tipo;
+		  this.matrizAdyacencia[destino][origen]=tipo;
+	    }
+    
+    
 	public Ciudad(int [][] matriz) {
 		
 		//Creamos vectores para el grafo terminado
