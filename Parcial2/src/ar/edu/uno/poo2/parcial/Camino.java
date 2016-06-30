@@ -17,4 +17,15 @@ public class Camino {
 		this.destino = destino;
 	}
 	
+	public int compareTo(Object o) {
+		Camino camino = (Camino)o;        
+
+		if(this.getTipo()==camino.getTipo()) {            
+				return this.getTipo();
+		} else {
+			return camino.getTipo();
+		}        
+
+	}
+	
 }
