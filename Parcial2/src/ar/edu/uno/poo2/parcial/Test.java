@@ -30,14 +30,14 @@ public class Test {
 				origen= Integer.parseInt(linea.nextToken());
 				destino= Integer.parseInt(linea.nextToken());
 				//System.out.println("Tunel:\nOrigen: "+origen+"\nDestino: "+destino);
-				miCiudad.agregarCamino(origen, destino, 0);
+				miCiudad.agregarCamino(origen-1, destino-1, 1);
 			}
 			for (int i=0; i< puentes; i++){
 				linea= new StringTokenizer(br.readLine());
 				origen= Integer.parseInt(linea.nextToken());
 				destino= Integer.parseInt(linea.nextToken());
 				//System.out.println("Puente:\nOrigen: "+origen+"\nDestino: "+destino);
-				miCiudad.agregarCamino(origen, destino, 1);
+				miCiudad.agregarCamino(origen-1, destino-1, 1);
 			}
 		
 				
